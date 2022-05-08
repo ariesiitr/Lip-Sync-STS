@@ -5,7 +5,7 @@ Task 1- Translate the audio from English to Hindi.<br/>
 Task 2- Sync the Lips of video according to generated Hindi audio.
 
 ## Task 1
-In this task, for speech-to-speech translation, we use an automatic speech recognizer (ASR) to transcribe text from the original speech in Hindi language. We adapt neural machine translation and text-to-speech models to work for Indian languages and generate translated speech. The Task 1 proceeds in following way: Video  -> English Audio  -> English Text  -> Hindi Text  -> Hindi Audio.<br/>
+In this task, for speech-to-speech translation, we use an automatic speech recognizer (ASR) to transcribe text from the original speech in Hindi language. We adapt neural machine translation and text-to-speech models to work for Indian languages and generate translated speech. The Task 1 proceeds in following way:<br/> Video  -> English Audio  -> English Text  -> Hindi Text  -> Hindi Audio.<br/>
 The input given is the video with audio in English language. We extracted English audio from video using Moviepy library. Then converted this audio to text using Deepvoice 2 model of Pytorch. Then translated this English text to Hindi Text using a language translation model of huggingface. There was limit of 5000 bytes for this model, so we broke the text into several chunks of 2000 bytes and then applied the model. After that using Google API, we generated voice from the translated Hindi text and will merge it using Lip GAN. We adopt this approach to achieve high quality text-to-speech synthesis in our target language.<br/>
 https://colab.research.google.com/drive/1scp7LqkbFx5QghIPU3W4F-7771BzNV9S?usp=sharing
 
@@ -21,12 +21,14 @@ In a nutshell, our setup contains two networks, a generator G that generates fac
 <a href="url"><img src="(https://user-images.githubusercontent.com/79749572/167292799-228bb906-a34d-4414-9d78-1d440719ebc1.png" width="720">
 
 ### Generator
-The generator network contains three branches: <br/>
+The generator network contains three branches: <br/><br/>
 (i) The Face Encoder<br/>
-During the training process of the generator , a face image of random pose and its corresponding audio segment is given as input and the generator is expected to morph the lip shape. Along with the random identity face image I, we also provide the desired pose information of the ground-truth as input to the face encoder. We mask the lower half of the ground truth face image and concatenate it channel-wise with I. <br/>
+During the training process of the generator , a face image of random pose and its corresponding audio segment is given as input and the generator is expected to morph the lip shape. Along with the random identity face image I, we also provide the desired pose information of the ground-truth as input to the face encoder. We mask the lower half of the ground truth face image and concatenate it channel-wise with I. <br/><br/>
+(i) The Face Encoder<br/>
 The masked ground truth image provides the network with information about the target pose while ensuring that the network never gets any information about the ground truth lip shape. Thus, our final input to the face encoder , a regular CNN, is a HxHx6 image. <br/>
 (ii) Audio Encoder<br/>
-The audio encoder is a standard CNN that takes a Mel-frequency cepstral coefficient (MFCC) heatmap of size MxTx1 and creates an audio embedding of size h. The audio embedding is concatenated with the face embedding to produce a joint audio-visual embedding of size 2xh.<br/>
+The audio encoder is a standard CNN that takes a Mel-frequency cepstral coefficient (MFCC) heatmap of size MxTx1 and creates an audio embedding of size h. The audio embedding is concatenated with the face embedding to produce a joint audio-visual embedding of size 2xh.<br/><br/>
+(i) The Face Encoder<br/>
 (iii) Face Decoder<br/>
 This branch produces a lip-synchronized face from the joint audio-visual embedding by inpainting the masked region of the input image with an appropriate mouth shape. It contains a series of residual blocks with a few intermediate deconvolutional layers. The output layer of the Face decoder is a sigmoid activated 1x1 convolutional layer with 3 filters, resulting in a face image of HxHx3.<br/>
 
