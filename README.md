@@ -31,9 +31,9 @@ The audio encoder is a standard CNN that takes a Mel-frequency cepstral coeffici
 This branch produces a lip-synchronized face from the joint audio-visual embedding by inpainting the masked region of the input image with an appropriate mouth shape. It contains a series of residual blocks with a few intermediate deconvolutional layers. The output layer of the Face decoder is a sigmoid activated 1x1 convolutional layer with 3 filters, resulting in a face image of HxHx3.<br/>
 
 ### Discriminator
-We used L2 reconstruction loss for the generator that generated satisfactory talking faces, employing strong additional supervision can help the generator learn robust, accurate phoneme viseme mappings and make the facial movements more natural. We are directly testing whether the generated face synchronizes with the audio provides a stronger supervisory signal to the generator network. Accordingly, we create a network that encodes an input face and audio into fixed representations and computes the L2 distance d between them. The face encoder and audio encoder are the same as used in the generator network. The discriminator learns to detect synchronization by minimizing the following contrastive loss: <br/>
- <a href="url"><img src="(https://user-images.githubusercontent.com/79749572/167292922-279dc3ad-14dc-4818-9afc-da123aa22832.png" width="350">
-
+We used L2 reconstruction loss for the generator that generated satisfactory talking faces, employing strong additional supervision can help the generator learn robust, accurate phoneme viseme mappings and make the facial movements more natural. We are directly testing whether the generated face synchronizes with the audio provides a stronger supervisory signal to the generator network. Accordingly, we create a network that encodes an input face and audio into fixed representations and computes the L2 distance d between them. The face encoder and audio encoder are the same as used in the generator network. The discriminator learns to detect synchronization by minimizing the following contrastive loss:
+ 
+<a href="url"><img src="(https://user-images.githubusercontent.com/79749572/167292922-279dc3ad-14dc-4818-9afc-da123aa22832.png" width="350">
 
 ## Result
 #### Input Video
