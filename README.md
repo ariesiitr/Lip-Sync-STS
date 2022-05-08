@@ -9,7 +9,7 @@ In this task, for speech-to-speech translation, we use an automatic speech recog
 The input given is the video with audio in English language. We extracted English audio from video using Moviepy library. Then converted this audio to text using Deepvoice 2 model of Pytorch. Then translated this English text to Hindi Text using a language translation model of huggingface. There was limit of 5000 bytes for this model, so we broke the text into several chunks of 2000 bytes and then applied the model. After that using Google API, we generated voice from the translated Hindi text and will merge it using Lip GAN. We adopt this approach to achieve high quality text-to-speech synthesis in our target language.<br/>
 https://colab.research.google.com/drive/1scp7LqkbFx5QghIPU3W4F-7771BzNV9S?usp=sharing
 
-<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295390-8d53d96d-462f-4fd2-995e-1f198fa3af08.png" width="720" height = "350">
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295444-d010a382-8026-460e-bcc2-83eb76225dad.png" width="720" height = "350">
 
 ## Task 2
 In this task we are given with a source or input video and a translated audio speech in Hindi. The translated audio is created using the English audio or speech from given input video file. Our task is to generate a lip-synced video having speech language as Hindi using these two inputs. <br/>
@@ -18,7 +18,7 @@ This task consists of a GAN network having a generator to generate lip-synced fr
 ## Model Formulation
 In a nutshell, our setup contains two networks, a generator G that generates faces by conditioning on audio inputs and a discriminator D that tests whether the generated face and the input audio are in sync. By training these networks together, the generator G learns to create photo-realistic faces that are accurately in sync with the given input audio.
   
-<a href="url"><img src="(https://user-images.githubusercontent.com/79749572/167292799-228bb906-a34d-4414-9d78-1d440719ebc1.png" width="720">
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295390-8d53d96d-462f-4fd2-995e-1f198fa3af08.png" width="720">
 
 ### Generator
 The generator network contains three branches: <br/><br/>
