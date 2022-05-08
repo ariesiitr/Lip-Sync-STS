@@ -9,7 +9,7 @@ In this task, for speech-to-speech translation, we use an automatic speech recog
 The input given is the video with audio in English language. We extracted English audio from video using Moviepy library. Then converted this audio to text using Deepvoice 2 model of Pytorch. Then translated this English text to Hindi Text using a language translation model of huggingface. There was limit of 5000 bytes for this model, so we broke the text into several chunks of 2000 bytes and then applied the model. After that using Google API, we generated voice from the translated Hindi text and will merge it using Lip GAN. We adopt this approach to achieve high quality text-to-speech synthesis in our target language.<br/>
 https://colab.research.google.com/drive/1scp7LqkbFx5QghIPU3W4F-7771BzNV9S?usp=sharing
 
-<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167292696-cd46db8e-8000-4a7d-80b9-f6e8b4054382.png" width="400" height = "720">
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167292696-cd46db8e-8000-4a7d-80b9-f6e8b4054382.png" width="720" height = "405">
 
 ## Task 2
 In this task we are given with a source or input video and a translated audio speech in Hindi. The translated audio is created using the English audio or speech from given input video file. Our task is to generate a lip-synced video having speech language as Hindi using these two inputs. <br/>
