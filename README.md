@@ -9,7 +9,7 @@ In this task, for speech-to-speech translation, we use an automatic speech recog
 The input given is the video with audio in English language. We extracted English audio from video using Moviepy library. Then converted this audio to text using Deepvoice 2 model of Pytorch. Then translated this English text to Hindi Text using a language translation model of huggingface. There was limit of 5000 bytes for this model, so we broke the text into several chunks of 2000 bytes and then applied the model. After that using Google API, we generated voice from the translated Hindi text and will merge it using Lip GAN. We adopt this approach to achieve high quality text-to-speech synthesis in our target language.<br/>
 https://colab.research.google.com/drive/1scp7LqkbFx5QghIPU3W4F-7771BzNV9S?usp=sharing
 
-![image](https://user-images.githubusercontent.com/79749572/167292696-cd46db8e-8000-4a7d-80b9-f6e8b4054382.png | width=100)
+![test image size]<img src="https://user-images.githubusercontent.com/79749572/167292696-cd46db8e-8000-4a7d-80b9-f6e8b4054382.png" width="100">
 
 ## Task 2
 In this task we are given with a source or input video and a translated audio speech in Hindi. The translated audio is created using the English audio or speech from given input video file. Our task is to generate a lip-synced video having speech language as Hindi using these two inputs. <br/>
@@ -38,19 +38,14 @@ We used L2 reconstruction loss for the generator that generated satisfactory tal
 ## Result
 #### Input Video
 
-https://user-images.githubusercontent.com/79749572/167293222-71f93fae-baab-427b-b7a7-b2522a047415.mp4
-
+https://user-images.githubusercontent.com/79749572/167294455-815a2d20-f1e2-4cc3-a2ca-cd04bf169d9a.mp4
 
 #### Translated Audio
 ![image](https://user-images.githubusercontent.com/79749572/167293718-952786b0-3a40-4c4e-b7da-2598a6bb7cf7.png | width = 100)
 
-
-
 #### Final Output
-![image](https://user-images.githubusercontent.com/79749572/167292972-a71c3442-c1ad-4aec-aaec-30a992b2dec5.png)
 
-
-
+https://user-images.githubusercontent.com/79749572/167294332-2a8aa36d-807e-475c-8ea0-88d14a3264b6.mp4
 
 ## Applications
 ![image](https://user-images.githubusercontent.com/79749572/167292981-27bfc583-c9e5-44ef-9483-23250d6a861b.png | width=200)
