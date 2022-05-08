@@ -33,7 +33,7 @@ This branch produces a lip-synchronized face from the joint audio-visual embeddi
 ### Discriminator
 We used L2 reconstruction loss for the generator that generated satisfactory talking faces, employing strong additional supervision can help the generator learn robust, accurate phoneme viseme mappings and make the facial movements more natural. We are directly testing whether the generated face synchronizes with the audio provides a stronger supervisory signal to the generator network. Accordingly, we create a network that encodes an input face and audio into fixed representations and computes the L2 distance d between them. The face encoder and audio encoder are the same as used in the generator network. The discriminator learns to detect synchronization by minimizing the following contrastive loss. 
  
-<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295701-e0b9680d-da1f-477e-becf-5b29ed6524c8.png" width="350">
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295701-e0b9680d-da1f-477e-becf-5b29ed6524c8.png" width="500" height = "200">
 
 ## Result
 #### Input Video
@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/79749572/167294455-815a2d20-f1e2-4cc3-
     
 #### Translated Audio
 
-<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295755-f792257d-9a8c-4be7-8a81-920aa777ed01.png" width="350">   
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295755-f792257d-9a8c-4be7-8a81-920aa777ed01.png" width="100" height = "350">   
   
 #### Final Output
 
@@ -54,7 +54,7 @@ https://user-images.githubusercontent.com/79749572/167294332-2a8aa36d-807e-475c-
   
 ## Applications
 
-<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167292981-27bfc583-c9e5-44ef-9483-23250d6a861b.png" width="720">  
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167292981-27bfc583-c9e5-44ef-9483-23250d6a861b.png" width="800">  
 
 ### Reference Papers
 http://cvit.iiit.ac.in/research/projects/cvit-projects/facetoface-translation<br/>
