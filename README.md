@@ -38,20 +38,17 @@ We used L2 reconstruction loss for the generator that generated satisfactory tal
 ## Result
 #### Input Video
 
-    
-https://user-images.githubusercontent.com/79749572/167294455-815a2d20-f1e2-4cc3-a2ca-cd04bf169d9a.mp4
-
+https://user-images.githubusercontent.com/79749572/167308945-e84a0bd6-74d9-4531-ac12-24d348f7a7f5.mov
+  
     
 #### Translated Audio
 
-<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295755-f792257d-9a8c-4be7-8a81-920aa777ed01.png" width="100" height = "350">   
-  
+<a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295755-f792257d-9a8c-4be7-8a81-920aa777ed01.png" width="60" height = "45">   
+
 #### Final Output
 
-  
-https://user-images.githubusercontent.com/79749572/167294332-2a8aa36d-807e-475c-8ea0-88d14a3264b6.mp4
-
-  
+https://user-images.githubusercontent.com/79749572/167309051-3add282d-aaa0-44da-a13f-a5ecc7e850b3.mov
+ 
 ## Applications
 
 <a href="url"><img src="https://user-images.githubusercontent.com/79749572/167292981-27bfc583-c9e5-44ef-9483-23250d6a861b.png" width="800">  
@@ -60,6 +57,11 @@ https://user-images.githubusercontent.com/79749572/167294332-2a8aa36d-807e-475c-
 http://cvit.iiit.ac.in/research/projects/cvit-projects/facetoface-translation<br/>
 https://arxiv.org/format/1611.01599<br/>
 https://arxiv.org/pdf/2008.10010v1.pdf
+  
+### Contributers
+  Prafful Varshney<br/>
+  Nishir Agrawal<br/>
+  Satyam Yadav
 
 
 
