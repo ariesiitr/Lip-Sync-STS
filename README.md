@@ -38,8 +38,8 @@ We used L2 reconstruction loss for the generator that generated satisfactory tal
 ## Result
 #### Input Video
   
+  <a href="url"><video src="https://user-images.githubusercontent.com/96406063/167405376-57056631-cae9-49d9-9aaf-fb1419fc5b5f.mp4" width="200" height = "100">
   
-https://user-images.githubusercontent.com/96406063/167405376-57056631-cae9-49d9-9aaf-fb1419fc5b5f.mp4
 
   
 #### Translated Audio
