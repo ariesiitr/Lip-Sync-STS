@@ -44,6 +44,9 @@ https://user-images.githubusercontent.com/96406063/167405376-57056631-cae9-49d9-
   
 #### Translated Audio
   
+  [hindi_audio.zip](https://github.com/ariesiitr/Lip-Sync-STS/files/8651500/hindi_audio.zip)
+
+  
 #### Final Output
 
  
