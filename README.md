@@ -20,7 +20,7 @@ In a nutshell, our setup contains two networks, a generator G that generates fac
   
 <a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295390-8d53d96d-462f-4fd2-995e-1f198fa3af08.png" width="720">
 
-### Generator
+### Generator:-
 The generator network contains three branches: <br/><br/>
 (i) The Face Encoder<br/>
 During the training process of the generator , a face image of random pose and its corresponding audio segment is given as input and the generator is expected to morph the lip shape. Along with the random identity face image I, we also provide the desired pose information of the ground-truth as input to the face encoder. We mask the lower half of the ground truth face image and concatenate it channel-wise with I.
@@ -30,24 +30,24 @@ The audio encoder is a standard CNN that takes a Mel-frequency cepstral coeffici
 (iii) Face Decoder<br/>
 This branch produces a lip-synchronized face from the joint audio-visual embedding by inpainting the masked region of the input image with an appropriate mouth shape. It contains a series of residual blocks with a few intermediate deconvolutional layers. The output layer of the Face decoder is a sigmoid activated 1x1 convolutional layer with 3 filters, resulting in a face image of HxHx3.<br/>
 
-### Discriminator
+### Discriminator:-
 We used L2 reconstruction loss for the generator that generated satisfactory talking faces, employing strong additional supervision can help the generator learn robust, accurate phoneme viseme mappings and make the facial movements more natural. We are directly testing whether the generated face synchronizes with the audio provides a stronger supervisory signal to the generator network. Accordingly, we create a network that encodes an input face and audio into fixed representations and computes the L2 distance d between them. The face encoder and audio encoder are the same as used in the generator network. The discriminator learns to detect synchronization by minimizing the following contrastive loss. 
  
 <a href="url"><img src="https://user-images.githubusercontent.com/79749572/167295701-e0b9680d-da1f-477e-becf-5b29ed6524c8.png" width="500" height = "200">
 
 ## Result
-#### Input Video
+### Input Video
   
-  <a href="url"><video src="https://user-images.githubusercontent.com/96406063/167405376-57056631-cae9-49d9-9aaf-fb1419fc5b5f.mp4" width="200" height = "100">
+  <a href="url"><video src="https://user-images.githubusercontent.com/96406063/167405376-57056631-cae9-49d9-9aaf-fb1419fc5b5f.mp4"><br/>
   
 
   
-#### Translated Audio
+### Translated Audio
   
-  [hindi_audio.zip](https://github.com/ariesiitr/Lip-Sync-STS/files/8651500/hindi_audio.zip)
+  [hindi_audio.zip](https://github.com/ariesiitr/Lip-Sync-STS/files/8651500/hindi_audio.zip)<br/>
 
   
-#### Final Output
+### Final Output
 
  
 ## Applications
@@ -60,9 +60,11 @@ https://arxiv.org/format/1611.01599<br/>
 https://arxiv.org/pdf/2008.10010v1.pdf
   
 ### Contributers
-  Prafful Varshney<br/>
-  Nishir Agrawal<br/>
-  Satyam Yadav
+  
+  <a href="https://github.com/raosatyam">SATYAM YADAV</a><br/>
+  <a href="#">PRAFFUL VARSHNEY</a><br/>
+  <a href="#">NISHIR AGRAWAL</a>
+
 
 
 
