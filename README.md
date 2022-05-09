@@ -45,8 +45,11 @@ We used L2 reconstruction loss for the generator that generated satisfactory tal
 ### Translated Audio
   
   [hindi_audio.zip](https://github.com/ariesiitr/Lip-Sync-STS/files/8651500/hindi_audio.zip)<br/>
+
   
 ### Final Output
+
+  <a href="url"><video src="https://user-images.githubusercontent.com/96406063/167412441-83e9c9f0-c3f2-4b27-aed7-e5a482037fc5.mp4"><br/>
 
  
 ## Applications
@@ -61,8 +64,8 @@ https://arxiv.org/pdf/2008.10010v1.pdf
 ### Contributers
   
   <a href="https://github.com/raosatyam">SATYAM YADAV</a><br/>
-  <a href="#">PRAFFUL VARSHNEY</a><br/>
-  <a href="#">NISHIR AGRAWAL</a>
+  <a href="https://github.com/praffulv-225">PRAFFUL VARSHNEY</a><br/>
+  <a href="https://github.com/nishir53">NISHIR AGRAWAL</a>
 
 
 
