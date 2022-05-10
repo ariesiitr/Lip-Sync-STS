@@ -57,15 +57,15 @@ We used L2 reconstruction loss for the generator that generated satisfactory tal
 <a href="url"><img src="https://user-images.githubusercontent.com/79749572/167292981-27bfc583-c9e5-44ef-9483-23250d6a861b.png" width="800">  
 
 ### Reference Papers
-http://cvit.iiit.ac.in/research/projects/cvit-projects/facetoface-translation<br/>
+https://arxiv.org/pdf/2003.00418v1.pdf<br/>
 https://arxiv.org/format/1611.01599<br/>
 https://arxiv.org/pdf/2008.10010v1.pdf
   
 ### Contributers
   
-  <a href="https://github.com/raosatyam">SATYAM YADAV</a><br/>
-  <a href="https://github.com/praffulv-225">PRAFFUL VARSHNEY</a><br/>
-  <a href="https://github.com/nishir53">NISHIR AGRAWAL</a>
+  <a href="https://github.com/praffulv-225">Prafful Varshney</a><br/>
+  <a href="https://github.com/raosatyam">Satyam Yadav</a><br/>
+  <a href="https://github.com/nishir53">Nishir Agrawal</a>
 
 
 
